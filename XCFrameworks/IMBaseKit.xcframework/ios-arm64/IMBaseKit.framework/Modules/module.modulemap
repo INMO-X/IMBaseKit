@@ -1,0 +1,10 @@
+framework module IMBaseKit {
+  umbrella header "IMBaseKit.h"
+  export *
+
+  module * { export * }
+}
+
+module IMBaseKit.Swift {
+  header "IMBaseKit-Swift.h"
+}

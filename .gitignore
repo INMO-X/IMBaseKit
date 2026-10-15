@@ -1,0 +1,5 @@
+.DS_Store
+Pods/
+Example/Pods/
+Example/**/xcuserdata/
+DerivedData/
