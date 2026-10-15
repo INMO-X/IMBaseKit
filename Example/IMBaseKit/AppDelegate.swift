@@ -11,8 +11,6 @@ import IMBaseKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IMCrasher.registerCrashHandler()
@@ -26,10 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             IMExampleLaunchLog.shared.markClosureRegistered()
         }
         IMLaunchManager.shared.launch(forKey: IMLaunchKey.sdk)
-
-        if let root = window?.rootViewController, !(root is UINavigationController) {
-            window?.rootViewController = UINavigationController(rootViewController: root)
-        }
         return true
     }
 }

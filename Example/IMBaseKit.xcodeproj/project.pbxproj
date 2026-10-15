@@ -17,6 +17,7 @@
 		A1E000041AFB9204008FA782 /* IMExampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E000031AFB9204008FA782 /* IMExampleRouter.swift */; };
 		A1E000061AFB9204008FA782 /* IMExampleProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E000051AFB9204008FA782 /* IMExampleProfileService.swift */; };
 		A1E000081AFB9204008FA782 /* IMExampleMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E000071AFB9204008FA782 /* IMExampleMenuViewModel.swift */; };
+		A1E0000A1AFB9204008FA782 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E000091AFB9204008FA782 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		A1E000031AFB9204008FA782 /* IMExampleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMExampleRouter.swift; sourceTree = "<group>"; };
 		A1E000051AFB9204008FA782 /* IMExampleProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMExampleProfileService.swift; sourceTree = "<group>"; };
 		A1E000071AFB9204008FA782 /* IMExampleMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMExampleMenuViewModel.swift; sourceTree = "<group>"; };
+		A1E000091AFB9204008FA782 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C0F6C833BA9AAE92FB717093 /* Pods-IMBaseKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMBaseKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-IMBaseKit_Tests/Pods-IMBaseKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4A3F11EFB8AAC9DE7C2C700 /* IMBaseKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IMBaseKit.podspec; path = ../IMBaseKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CC54960C0D3052473047C66B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				A1E000091AFB9204008FA782 /* SceneDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				A1E000011AFB9204008FA782 /* IMExampleLaunch.swift */,
 				A1E000031AFB9204008FA782 /* IMExampleRouter.swift */,
@@ -262,6 +265,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				A1E0000A1AFB9204008FA782 /* SceneDelegate.swift in Sources */,
 				A1E000021AFB9204008FA782 /* IMExampleLaunch.swift in Sources */,
 				A1E000041AFB9204008FA782 /* IMExampleRouter.swift in Sources */,
 				A1E000061AFB9204008FA782 /* IMExampleProfileService.swift in Sources */,
