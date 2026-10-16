@@ -71,6 +71,8 @@ func application(_ application: UIApplication,
 
 `IMBuildRegion.isDomestic` / `isGlobal` 看的是主工程 bundle id：`com.inmox.next` 为国内，`com.inmox.next.global` 为海外。编译这个二进制时的条件编译不会跟着宿主的 Debug / AdHoc 重新打开。
 
+`openRouter` 分发 `hostApp`、`uiKit`、`accountKit`。地区选择是 `inmox://accountKit/regionSelect`，注销账号是 `inmox://accountKit/unregisterAccount`，都要注册 `IMAccountKitRouterServiceProtocol`。账号与安全仍是 `inmox://hostApp/accountSecurity`。
+
 ## 示例
 
 [Example/](Example/) 用 tag `0.1.0` 跑通 [docs/USAGE.md](docs/USAGE.md) 里的场景。

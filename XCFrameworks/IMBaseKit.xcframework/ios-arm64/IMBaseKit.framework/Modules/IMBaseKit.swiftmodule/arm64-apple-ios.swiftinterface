@@ -675,7 +675,6 @@ extension IMBaseKit::Environment : Swift::CustomStringConvertible {
 }
 @objc public protocol IMHostAppRouterServiceProtocol : IMBaseKit::TheRouterServiceProtocol {
   @objc optional func toAccountSecurity(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
-  @objc optional func toUnregisterAccount(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
   @objc optional func toEditProfile(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
   @objc optional func toChooseProduct(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
   @objc optional func toSearchDevice(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
@@ -1042,14 +1041,14 @@ public enum IMRouterScheme {
   public static let inmox: Swift::String
 }
 public enum IMRouterHost {
+  public static let accountKit: Swift::String
   public static let hostApp: Swift::String
   public static let uiKit: Swift::String
-  public static let accountKit: Swift::String
 }
 public enum IMRouterPath {
-  public static let accountSecurity: Swift::String
-  public static let unregisterAccount: Swift::String
   public static let regionSelect: Swift::String
+  public static let unregisterAccount: Swift::String
+  public static let accountSecurity: Swift::String
   public static let editProfile: Swift::String
   public static let chooseProduct: Swift::String
   public static let searchDevice: Swift::String
@@ -1075,9 +1074,9 @@ public enum IMRouterParamKey {
   public static let url: Swift::String
 }
 public enum IMRouterURL {
-  public static let accountSecurity: Swift::String
-  public static let unregisterAccount: Swift::String
   public static let regionSelect: Swift::String
+  public static let unregisterAccount: Swift::String
+  public static let accountSecurity: Swift::String
   public static let editProfile: Swift::String
   public static let chooseProduct: Swift::String
   public static let searchDevice: Swift::String
@@ -1097,8 +1096,8 @@ public enum IMRouterURL {
   public static let outterWeb: Swift::String
   public static let scanCode: Swift::String
 }
-public let RouterAccountSecurityUrl: Swift::String
 public let RouterUnregisterAccountUrl: Swift::String
+public let RouterAccountSecurityUrl: Swift::String
 public let RouterEditProfileUrl: Swift::String
 public let RouterChooseProductUrl: Swift::String
 public let RouterSearchDeviceUrl: Swift::String

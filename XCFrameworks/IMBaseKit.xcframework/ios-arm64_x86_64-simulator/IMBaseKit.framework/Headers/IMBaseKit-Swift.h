@@ -675,8 +675,6 @@ SWIFT_PROTOCOL("_TtP9IMBaseKit30IMHostAppRouterServiceProtocol_")
 @optional
 /// 跳转 账号与安全
 - (void)toAccountSecurity:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
-/// 跳转 注销账号
-- (void)toUnregisterAccount:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 编辑个人信息
 - (void)toEditProfile:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 选择产品（添加设备之前需选择产品）
@@ -1968,8 +1966,6 @@ SWIFT_PROTOCOL("_TtP9IMBaseKit30IMHostAppRouterServiceProtocol_")
 @optional
 /// 跳转 账号与安全
 - (void)toAccountSecurity:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
-/// 跳转 注销账号
-- (void)toUnregisterAccount:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 编辑个人信息
 - (void)toEditProfile:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 选择产品（添加设备之前需选择产品）

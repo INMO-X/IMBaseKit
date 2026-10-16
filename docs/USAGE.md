@@ -137,7 +137,7 @@ titleLabel.text = IMLocalizedString("common_done", "完成")
 openRouter(IMRouterURL.searchDevice, params: [IMRouterParamKey.deviceType: "C100"])
 ```
 
-只处理 `inmox://`。`host` 为 `hostApp` 时进宿主实现的 `IMHostAppRouterServiceProtocol`，为 `uiKit` 时进 IMUIKit。见 [§8](#8-路由)。
+只处理 `inmox://`。`host` 为 `hostApp` 时进宿主实现的 `IMHostAppRouterServiceProtocol`，为 `uiKit` 时进 IMUIKit，为 `accountKit` 时进 `IMAccountKitRouterServiceProtocol`。见 [§8](#8-路由)。
 
 ---
 
@@ -360,7 +360,7 @@ openRouter(IMRouterURL.innerWeb, params: [IMRouterParamKey.url: "https://example
 TheRouter.registerService(MyHostAppRouterService.self, instance: MyHostAppRouterService())
 ```
 
-`IMRouterURL.regionSelect` 的 host 是 `accountKit`。`openRouter` 当前只分发 `hostApp` 和 `uiKit`，这条 URL 需要账号模块自己的入口，不要指望 `openRouter` 打开它。
+`openRouter` 同时分发 `accountKit`。`IMRouterURL.regionSelect` 是 `inmox://accountKit/regionSelect`，`IMRouterURL.unregisterAccount` 是 `inmox://accountKit/unregisterAccount`。这两条交给已注册的 `IMAccountKitRouterServiceProtocol`（`toRegionSelect` / `toUnregisterAccount`）。注销账号不再走 `IMHostAppRouterServiceProtocol`。账号与安全仍是 `inmox://hostApp/accountSecurity`。
 
 `TheRouter.push` / `modal` / `popToRootVC` / `visibleVC` / `getKeyWindow` 不走 URL。`currentViewController()` 和 `UIWindow.im.currentWindow` 只在主线程有值。
 
@@ -420,7 +420,7 @@ auth.isAvailable(for: .bluetooth) { available, error in
 把 `IMLogger.shared.enable` 和 `IMEnvironmentManager.shared.allowsEnvironmentSwitch` 设为 true。二者默认都是 false。静态库按 Release 打包时，库内部的 `#if DEBUG` / `#if ADHOC` 不在包里。
 
 **页面路由没反应？**  
-宿主已实现并 `TheRouter.registerService` 了 `IMHostAppRouterServiceProtocol`；scheme 必须是 `inmox`；`openRouter` 只分发 `hostApp` 和 `uiKit`。
+宿主已实现并 `TheRouter.registerService` 了对应协议；scheme 必须是 `inmox`。`openRouter` 分发 `hostApp`、`uiKit`、`accountKit`。地区选择和注销账号要注册 `IMAccountKitRouterServiceProtocol`。
 
 **为什么业务文件还要 `import Moya`？**  
 `IMCommonRequestTarget` 继承 `Moya.TargetType`，响应模型继承 ObjectMapper 的 `Mappable`。这些库由宿主链接，不在 IMBaseKit 二进制里。
@@ -520,11 +520,12 @@ auth.isAvailable(for: .bluetooth) { available, error in
 
 | 符号 | 说明 |
 |---|---|
-| `openRouter` | 只接受 `inmox://`，按 host 分发 |
+| `openRouter` | 只接受 `inmox://`，按 host 分发 `hostApp` / `uiKit` / `accountKit` |
 | `IMRouterScheme` / `IMRouterHost` / `IMRouterPath` | scheme、host、path 常量 |
-| `IMRouterURL` | 拼好的完整 URL |
+| `IMRouterURL` | 拼好的完整 URL。`regionSelect`、`unregisterAccount` 的 host 是 `accountKit` |
 | `IMRouterParamKey` | 参数 key，如 `deviceType` / `url` / `title` |
-| `IMHostAppRouterServiceProtocol` / `hostAppRouter()` | 宿主页面跳转 |
+| `IMHostAppRouterServiceProtocol` / `hostAppRouter()` | 宿主页面跳转。不含注销账号 |
+| `IMAccountKitRouterServiceProtocol` / `accountKitRouter()` | 地区选择、注销账号 |
 | `IMUIKitRouterServiceProtocol` / `uikitRouter()` | 网页 / 扫码，由 IMUIKit 实现 |
 | `TheRouter.registerService` | 注册服务；异步写入 |
 | `TheRouter.push` / `modal` / `visibleVC` | 与 URL 无关的导航工具 |

@@ -11825,126 +11825,6 @@
           },
           {
             "kind": "Function",
-            "name": "toUnregisterAccount",
-            "printedName": "toUnregisterAccount(_:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(([Swift.String : Any]?, Any?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "([Swift.String : Any]?, Any?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "([Swift.String : Any]?, Any?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "[Swift.String : Any]?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Dictionary",
-                                "printedName": "[Swift.String : Any]",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "String",
-                                    "printedName": "Swift.String",
-                                    "usr": "s:SS"
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "ProtocolComposition",
-                                    "printedName": "Any"
-                                  }
-                                ],
-                                "usr": "s:SD"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Any?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "ProtocolComposition",
-                                "printedName": "Any"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@IMBaseKit@objc(pl)IMHostAppRouterServiceProtocol(im)toUnregisterAccount:completion:",
-            "mangledName": "$s9IMBaseKit30IMHostAppRouterServiceProtocolP19toUnregisterAccount_10completionySDySSypGSg_yAG_ypSgtcSgtF",
-            "moduleName": "IMBaseKit",
-            "genericSig": "<τ_0_0 where τ_0_0 : IMBaseKit.IMHostAppRouterServiceProtocol>",
-            "sugared_genericSig": "<Self where Self : IMBaseKit.IMHostAppRouterServiceProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Optional",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "toEditProfile",
             "printedName": "toEditProfile(_:completion:)",
             "children": [
@@ -29470,6 +29350,54 @@
         "children": [
           {
             "kind": "Var",
+            "name": "accountKit",
+            "printedName": "accountKit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9IMBaseKit12IMRouterHostO07accountB0SSvpZ",
+            "mangledName": "$s9IMBaseKit12IMRouterHostO07accountB0SSvpZ",
+            "moduleName": "IMBaseKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9IMBaseKit12IMRouterHostO07accountB0SSvgZ",
+                "mangledName": "$s9IMBaseKit12IMRouterHostO07accountB0SSvgZ",
+                "moduleName": "IMBaseKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "hostApp",
             "printedName": "hostApp",
             "children": [
@@ -29563,54 +29491,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "accountKit",
-            "printedName": "accountKit",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9IMBaseKit12IMRouterHostO07accountB0SSvpZ",
-            "mangledName": "$s9IMBaseKit12IMRouterHostO07accountB0SSvpZ",
-            "moduleName": "IMBaseKit",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9IMBaseKit12IMRouterHostO07accountB0SSvgZ",
-                "mangledName": "$s9IMBaseKit12IMRouterHostO07accountB0SSvgZ",
-                "moduleName": "IMBaseKit",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Enum",
@@ -29645,8 +29525,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "accountSecurity",
-            "printedName": "accountSecurity",
+            "name": "regionSelect",
+            "printedName": "regionSelect",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -29656,8 +29536,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9IMBaseKit12IMRouterPathO15accountSecuritySSvpZ",
-            "mangledName": "$s9IMBaseKit12IMRouterPathO15accountSecuritySSvpZ",
+            "usr": "s:9IMBaseKit12IMRouterPathO12regionSelectSSvpZ",
+            "mangledName": "$s9IMBaseKit12IMRouterPathO12regionSelectSSvpZ",
             "moduleName": "IMBaseKit",
             "static": true,
             "declAttributes": [
@@ -29682,8 +29562,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9IMBaseKit12IMRouterPathO15accountSecuritySSvgZ",
-                "mangledName": "$s9IMBaseKit12IMRouterPathO15accountSecuritySSvgZ",
+                "usr": "s:9IMBaseKit12IMRouterPathO12regionSelectSSvgZ",
+                "mangledName": "$s9IMBaseKit12IMRouterPathO12regionSelectSSvgZ",
                 "moduleName": "IMBaseKit",
                 "static": true,
                 "implicit": true,
@@ -29741,8 +29621,8 @@
           },
           {
             "kind": "Var",
-            "name": "regionSelect",
-            "printedName": "regionSelect",
+            "name": "accountSecurity",
+            "printedName": "accountSecurity",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -29752,8 +29632,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9IMBaseKit12IMRouterPathO12regionSelectSSvpZ",
-            "mangledName": "$s9IMBaseKit12IMRouterPathO12regionSelectSSvpZ",
+            "usr": "s:9IMBaseKit12IMRouterPathO15accountSecuritySSvpZ",
+            "mangledName": "$s9IMBaseKit12IMRouterPathO15accountSecuritySSvpZ",
             "moduleName": "IMBaseKit",
             "static": true,
             "declAttributes": [
@@ -29778,8 +29658,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9IMBaseKit12IMRouterPathO12regionSelectSSvgZ",
-                "mangledName": "$s9IMBaseKit12IMRouterPathO12regionSelectSSvgZ",
+                "usr": "s:9IMBaseKit12IMRouterPathO15accountSecuritySSvgZ",
+                "mangledName": "$s9IMBaseKit12IMRouterPathO15accountSecuritySSvgZ",
                 "moduleName": "IMBaseKit",
                 "static": true,
                 "implicit": true,
@@ -30859,8 +30739,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "accountSecurity",
-            "printedName": "accountSecurity",
+            "name": "regionSelect",
+            "printedName": "regionSelect",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -30870,8 +30750,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9IMBaseKit11IMRouterURLO15accountSecuritySSvpZ",
-            "mangledName": "$s9IMBaseKit11IMRouterURLO15accountSecuritySSvpZ",
+            "usr": "s:9IMBaseKit11IMRouterURLO12regionSelectSSvpZ",
+            "mangledName": "$s9IMBaseKit11IMRouterURLO12regionSelectSSvpZ",
             "moduleName": "IMBaseKit",
             "static": true,
             "declAttributes": [
@@ -30895,8 +30775,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9IMBaseKit11IMRouterURLO15accountSecuritySSvgZ",
-                "mangledName": "$s9IMBaseKit11IMRouterURLO15accountSecuritySSvgZ",
+                "usr": "s:9IMBaseKit11IMRouterURLO12regionSelectSSvgZ",
+                "mangledName": "$s9IMBaseKit11IMRouterURLO12regionSelectSSvgZ",
                 "moduleName": "IMBaseKit",
                 "static": true,
                 "implicit": true,
@@ -30953,8 +30833,8 @@
           },
           {
             "kind": "Var",
-            "name": "regionSelect",
-            "printedName": "regionSelect",
+            "name": "accountSecurity",
+            "printedName": "accountSecurity",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -30964,8 +30844,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9IMBaseKit11IMRouterURLO12regionSelectSSvpZ",
-            "mangledName": "$s9IMBaseKit11IMRouterURLO12regionSelectSSvpZ",
+            "usr": "s:9IMBaseKit11IMRouterURLO15accountSecuritySSvpZ",
+            "mangledName": "$s9IMBaseKit11IMRouterURLO15accountSecuritySSvpZ",
             "moduleName": "IMBaseKit",
             "static": true,
             "declAttributes": [
@@ -30989,8 +30869,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9IMBaseKit11IMRouterURLO12regionSelectSSvgZ",
-                "mangledName": "$s9IMBaseKit11IMRouterURLO12regionSelectSSvgZ",
+                "usr": "s:9IMBaseKit11IMRouterURLO15accountSecuritySSvgZ",
+                "mangledName": "$s9IMBaseKit11IMRouterURLO15accountSecuritySSvgZ",
                 "moduleName": "IMBaseKit",
                 "static": true,
                 "implicit": true,
@@ -31872,52 +31752,6 @@
       },
       {
         "kind": "Var",
-        "name": "RouterAccountSecurityUrl",
-        "printedName": "RouterAccountSecurityUrl",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          }
-        ],
-        "declKind": "Var",
-        "usr": "s:9IMBaseKit24RouterAccountSecurityUrlSSvp",
-        "mangledName": "$s9IMBaseKit24RouterAccountSecurityUrlSSvp",
-        "moduleName": "IMBaseKit",
-        "declAttributes": [
-          "HasInitialValue",
-          "HasStorage",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "isLet": true,
-        "hasStorage": true,
-        "accessors": [
-          {
-            "kind": "Accessor",
-            "name": "Get",
-            "printedName": "Get()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:9IMBaseKit24RouterAccountSecurityUrlSSvg",
-            "mangledName": "$s9IMBaseKit24RouterAccountSecurityUrlSSvg",
-            "moduleName": "IMBaseKit",
-            "implicit": true,
-            "accessorKind": "get"
-          }
-        ]
-      },
-      {
-        "kind": "Var",
         "name": "RouterUnregisterAccountUrl",
         "printedName": "RouterUnregisterAccountUrl",
         "children": [
@@ -31956,6 +31790,52 @@
             "declKind": "Accessor",
             "usr": "s:9IMBaseKit26RouterUnregisterAccountUrlSSvg",
             "mangledName": "$s9IMBaseKit26RouterUnregisterAccountUrlSSvg",
+            "moduleName": "IMBaseKit",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "RouterAccountSecurityUrl",
+        "printedName": "RouterAccountSecurityUrl",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:9IMBaseKit24RouterAccountSecurityUrlSSvp",
+        "mangledName": "$s9IMBaseKit24RouterAccountSecurityUrlSSvp",
+        "moduleName": "IMBaseKit",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:9IMBaseKit24RouterAccountSecurityUrlSSvg",
+            "mangledName": "$s9IMBaseKit24RouterAccountSecurityUrlSSvg",
             "moduleName": "IMBaseKit",
             "implicit": true,
             "accessorKind": "get"
@@ -70465,2177 +70345,2177 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Gesture\/BlockSwipe.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Gesture\/BlockSwipe.swift",
       "kind": "IntegerLiteral",
       "offset": 330,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Gesture\/BlockTap.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Gesture\/BlockTap.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Gesture\/BlockTap.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Gesture\/BlockTap.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 166,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 177,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 193,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 216,
       "length": 11,
       "value": "3"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Bundle+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 18,
       "value": "4"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Date+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Date+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 4964,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Date+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Date+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 5701,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Date+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/Date+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 6137,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Cryptor\/AES\/IMAESCryptor.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Cryptor\/AES\/IMAESCryptor.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 18,
       "value": "\"fedcba0987654321\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMAccountKitRouterServiceProtocol.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMAccountKitRouterServiceProtocol.swift",
       "kind": "Dictionary",
-      "offset": 1258,
+      "offset": 1261,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMBaseKitLaunch.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMBaseKitLaunch.swift",
       "kind": "StringLiteral",
       "offset": 653,
       "length": 11,
       "value": "\"IMBaseKit\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMCacheManager+Convenience.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMCacheManager+Convenience.swift",
       "kind": "BooleanLiteral",
       "offset": 422,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMCacheManager+Convenience.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMCacheManager+Convenience.swift",
       "kind": "IntegerLiteral",
       "offset": 931,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCacheManager+Network.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCacheManager+Network.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 12,
       "value": "\"netRequest\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMCacheManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMCacheManager.swift",
       "kind": "StringLiteral",
       "offset": 225,
       "length": 28,
       "value": "\"com.inmo.x.AllCacheCleared\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonRequestTarget.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonRequestTarget.swift",
       "kind": "IntegerLiteral",
       "offset": 187,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonRequestTarget.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonRequestTarget.swift",
       "kind": "IntegerLiteral",
       "offset": 273,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "BooleanLiteral",
       "offset": 1054,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1348,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1361,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1652,
       "length": 5,
       "value": "10103"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1741,
       "length": 5,
       "value": "40100"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1836,
       "length": 5,
       "value": "40101"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1934,
       "length": 5,
       "value": "40102"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMCommonResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2044,
       "length": 5,
       "value": "40103"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6661,
       "length": 9,
       "value": "\"SIGABRT\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6703,
       "length": 8,
       "value": "\"SIGBUS\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6744,
       "length": 8,
       "value": "\"SIGFPE\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6785,
       "length": 8,
       "value": "\"SIGILL\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6827,
       "length": 9,
       "value": "\"SIGPIPE\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6870,
       "length": 9,
       "value": "\"SIGSEGV\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6912,
       "length": 8,
       "value": "\"SIGSYS\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6954,
       "length": 9,
       "value": "\"SIGTRAP\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 6992,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 7065,
       "length": 6,
       "value": "\"0x%x\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 7396,
       "length": 4,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 7429,
       "length": 241,
       "value": "\"******** Signal Exception Begin ********\nAdress:\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 7507,
       "length": 4,
       "value": "\"\nName:\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 7538,
       "length": 5,
       "value": "\"\nStack:\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 7561,
       "length": 6,
       "value": "\"\nThread Info:\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Crasher\/IMCrasher.swift",
       "kind": "StringLiteral",
       "offset": 7611,
       "length": 8,
       "value": "\"\n******** Signal Exception End ********\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "StringLiteral",
       "offset": 157,
       "length": 21,
       "value": "\"EnvironmentStateKey\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "Dictionary",
       "offset": 422,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 613,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "StringLiteral",
       "offset": 4006,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "StringLiteral",
       "offset": 4044,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "StringLiteral",
       "offset": 4162,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4727,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMEnvironmentManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4748,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMHostAppRouterServiceProtocol.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMHostAppRouterServiceProtocol.swift",
       "kind": "Dictionary",
-      "offset": 2870,
+      "offset": 2743,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 9,
       "value": "\"zh-Hans\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
       "kind": "StringLiteral",
       "offset": 419,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
       "kind": "StringLiteral",
       "offset": 442,
       "length": 4,
       "value": "\"ar\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
       "kind": "StringLiteral",
       "offset": 1390,
       "length": 42,
       "value": "\"IMLanguageService.selectedLanguageOption\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLanguageService.swift",
       "kind": "Dictionary",
       "offset": 1518,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMLaunchManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMLaunchManager.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 5,
       "value": "\"SDK\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMLaunchManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMLaunchManager.swift",
       "kind": "StringLiteral",
       "offset": 2894,
       "length": 20,
       "value": "\"IMLaunchRegistrant\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMLaunchManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Launch\/IMLaunchManager.swift",
       "kind": "Dictionary",
       "offset": 5435,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLocalizedService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLocalizedService.swift",
       "kind": "StringLiteral",
       "offset": 335,
       "length": 28,
       "value": "\"com.inmo.x.RegionDidChange\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLocalizedService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Localized\/IMLocalizedService.swift",
       "kind": "StringLiteral",
       "offset": 911,
       "length": 25,
       "value": "\"im_account_login_region\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Console.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Console.swift",
       "kind": "IntegerLiteral",
       "offset": 196,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Console.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Console.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Console.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Console.swift",
       "kind": "BooleanLiteral",
       "offset": 1498,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Crash.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Crash.swift",
       "kind": "IntegerLiteral",
       "offset": 192,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Crash.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Crash.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 8,
       "value": "\"\/Crash\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Crash.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Crash.swift",
       "kind": "BooleanLiteral",
       "offset": 668,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLogger+Network.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLogger+Network.swift",
       "kind": "IntegerLiteral",
       "offset": 197,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLogger+Network.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLogger+Network.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 10,
       "value": "\"\/Network\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLogger+Network.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLogger+Network.swift",
       "kind": "BooleanLiteral",
       "offset": 787,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 5,
       "value": "\"App\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 6,
       "value": "\"Page\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
       "kind": "IntegerLiteral",
       "offset": 294,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 8,
       "value": "\"\/Track\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
       "kind": "BooleanLiteral",
       "offset": 1350,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger+Track.swift",
       "kind": "Dictionary",
       "offset": 2145,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 755,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1804,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
       "kind": "StringLiteral",
       "offset": 2902,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
       "kind": "StringLiteral",
       "offset": 2949,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Logger\/IMLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2990,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1352,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1357,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1482,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1487,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1622,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1627,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1764,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1769,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1900,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 1905,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 2044,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 2049,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 2185,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Log\/IMLoggerPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 2190,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
       "kind": "StringLiteral",
       "offset": 421,
       "length": 41,
       "value": "\"网络状态发生变化：连接成功\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
       "kind": "StringLiteral",
       "offset": 661,
       "length": 41,
       "value": "\"网络状态发生变化：断开连接\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
       "kind": "BooleanLiteral",
       "offset": 1466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
       "kind": "BooleanLiteral",
       "offset": 1509,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
       "kind": "BooleanLiteral",
       "offset": 1702,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Listener\/IMNetworkListener.swift",
       "kind": "BooleanLiteral",
       "offset": 1744,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 602,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 912,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 926,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 1031,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 1045,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkProvider.swift",
       "kind": "Array",
       "offset": 1201,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 32,
       "value": "\"com.inmo.x.ConnectivityChanged\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 25,
       "value": "\"com.inmo.x.expiredToken\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 25,
       "value": "\"com.inmo.x.invalidToken\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 558,
       "length": 32,
       "value": "\"com.inmo.x.invalidRefreshToken\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMOpenRouterService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMOpenRouterService.swift",
       "kind": "Dictionary",
       "offset": 308,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMOpenRouterService.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMOpenRouterService.swift",
       "kind": "Dictionary",
       "offset": 646,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Cryptor\/RSA\/IMRSACryptor.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Cryptor\/RSA\/IMRSACryptor.swift",
       "kind": "StringLiteral",
       "offset": 11894,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
       "offset": 225,
       "length": 7,
       "value": "\"inmox\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 384,
-      "length": 9,
-      "value": "\"hostApp\""
-    },
-    {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
-      "kind": "StringLiteral",
-      "offset": 440,
-      "length": 7,
-      "value": "\"uiKit\""
-    },
-    {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
-      "kind": "StringLiteral",
-      "offset": 504,
+      "offset": 378,
       "length": 12,
       "value": "\"accountKit\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 667,
-      "length": 18,
-      "value": "\"\/accountSecurity\""
+      "offset": 453,
+      "length": 9,
+      "value": "\"hostApp\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "kind": "StringLiteral",
+      "offset": 509,
+      "length": 7,
+      "value": "\"uiKit\""
+    },
+    {
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 15,
+      "value": "\"\/regionSelect\""
+    },
+    {
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
       "offset": 749,
       "length": 20,
       "value": "\"\/unregisterAccount\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 837,
-      "length": 15,
-      "value": "\"\/regionSelect\""
+      "offset": 835,
+      "length": 18,
+      "value": "\"\/accountSecurity\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 917,
       "length": 14,
       "value": "\"\/editProfile\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1030,
+      "offset": 1031,
       "length": 16,
       "value": "\"\/chooseProduct\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 1168,
       "length": 15,
       "value": "\"\/searchDevice\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1248,
+      "offset": 1249,
       "length": 18,
       "value": "\"\/r2DeviceSetting\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1346,
+      "offset": 1347,
       "length": 20,
       "value": "\"\/r2ModifyGlassName\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1435,
+      "offset": 1436,
       "length": 15,
       "value": "\"\/r2AboutGlass\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1513,
+      "offset": 1514,
       "length": 16,
       "value": "\"\/r2NewbieGuide\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1598,
       "length": 18,
       "value": "\"\/c100NewbieGuide\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1682,
+      "offset": 1683,
       "length": 18,
       "value": "\"\/c100GuideDetail\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1772,
+      "offset": 1773,
       "length": 23,
       "value": "\"\/c100IllustratedGuide\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1859,
+      "offset": 1860,
       "length": 15,
       "value": "\"\/c100Feedback\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 1943,
       "length": 19,
       "value": "\"\/c100Troubleshoot\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2034,
+      "offset": 2035,
       "length": 20,
       "value": "\"\/c110SettingsEntry\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2129,
       "length": 22,
       "value": "\"\/c110CaptureSettings\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2225,
       "length": 22,
       "value": "\"\/c110ControlSettings\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2308,
+      "offset": 2309,
       "length": 11,
       "value": "\"\/innerWeb\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2384,
+      "offset": 2385,
       "length": 12,
       "value": "\"\/outterWeb\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2445,
+      "offset": 2446,
       "length": 11,
       "value": "\"\/scanCode\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2670,
+      "offset": 2671,
       "length": 12,
       "value": "\"deviceType\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2734,
+      "offset": 2735,
       "length": 7,
       "value": "\"title\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2791,
+      "offset": 2792,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 2965,
+      "offset": 2963,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3090,
+      "offset": 3088,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3212,
+      "offset": 3217,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3331,
+      "offset": 3336,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3449,
+      "offset": 3454,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3567,
+      "offset": 3572,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3688,
+      "offset": 3693,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3809,
+      "offset": 3814,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 3932,
+      "offset": 3937,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4054,
+      "offset": 4059,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4175,
+      "offset": 4180,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4298,
+      "offset": 4303,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4426,
+      "offset": 4431,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4551,
+      "offset": 4556,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4672,
+      "offset": 4677,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4799,
+      "offset": 4804,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 4928,
+      "offset": 4933,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 5059,
+      "offset": 5064,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 5180,
+      "offset": 5185,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 5288,
+      "offset": 5293,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMRouterConsts.swift",
       "kind": "StringLiteral",
-      "offset": 5396,
+      "offset": 5401,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMSandBoxManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Cache\/IMSandBoxManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1823,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMStatusCodeAlertPlugin.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Common\/IMStatusCodeAlertPlugin.swift",
       "kind": "IntegerLiteral",
       "offset": 3690,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 289,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 315,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 340,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 383,
       "length": 10,
       "value": "4"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 444,
       "length": 8,
       "value": "6"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 478,
       "length": 4,
       "value": "7"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 971,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 982,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "IntegerLiteral",
       "offset": 998,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/SystemAuth\/IMSystemAuthManager.swift",
       "kind": "BooleanLiteral",
       "offset": 11012,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMUIKitRouterServiceProtocol.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/IMUIKitRouterServiceProtocol.swift",
       "kind": "Dictionary",
       "offset": 1167,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMUrlManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMUrlManager.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 35,
       "value": "\"https:\/\/api-test.inmoxglasses.com\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMUrlManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMUrlManager.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 30,
       "value": "\"https:\/\/api.inmoxglasses.com\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMUrlManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Network\/Envi\/IMUrlManager.swift",
       "kind": "StringLiteral",
       "offset": 269,
       "length": 27,
       "value": "\"https:\/\/beian.miit.gov.cn\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 130,
       "value": "\"               　\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
       "kind": "FloatLiteral",
       "offset": 2578,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3370,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/String+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3802,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Convenience.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Convenience.swift",
       "kind": "IntegerLiteral",
       "offset": 1114,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Convenience.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Convenience.swift",
       "kind": "IntegerLiteral",
       "offset": 2337,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Convenience.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Convenience.swift",
       "kind": "IntegerLiteral",
       "offset": 2789,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 10,
       "value": "\"jumpType\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 7,
       "value": "\"ivar1\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 7,
       "value": "\"ivar2\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 12,
       "value": "\"resultType\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 6,
       "value": "\"path\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 7,
       "value": "\"class\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 10,
       "value": "\"priority\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 666,
       "length": 18,
       "value": "\"tabBarSelecIndex\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 758,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 12,
       "value": "\"patternKey\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 948,
       "length": 15,
       "value": "\"requestURLKey\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 996,
       "length": 16,
       "value": "\"matchFailedKey\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1037,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1072,
       "length": 10,
       "value": "\"userInfo\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 1162,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 1176,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 1196,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 1219,
       "length": 22,
       "value": "4"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 1251,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1323,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1361,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1396,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1437,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "Dictionary",
       "offset": 1479,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1554,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "StringLiteral",
       "offset": 1581,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "Dictionary",
       "offset": 1609,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 1928,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 1961,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 2094,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 2111,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 2124,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 2140,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 2235,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Generate.swift",
       "kind": "IntegerLiteral",
       "offset": 3840,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Jump.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Jump.swift",
       "kind": "BooleanLiteral",
       "offset": 7808,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Jump.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Jump.swift",
       "kind": "BooleanLiteral",
       "offset": 9695,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Service.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Service.swift",
       "kind": "BooleanLiteral",
       "offset": 2743,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Service.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter+Service.swift",
       "kind": "BooleanLiteral",
       "offset": 3150,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
       "kind": "Array",
       "offset": 1419,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
       "kind": "BooleanLiteral",
       "offset": 1589,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
       "kind": "StringLiteral",
       "offset": 1726,
       "length": 20,
       "value": "\"scheme:\/\/services?\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
       "kind": "IntegerLiteral",
       "offset": 2025,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouter.swift",
       "kind": "IntegerLiteral",
       "offset": 2389,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 15,
       "value": "\"KVONotifying_\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "StringLiteral",
       "offset": 297,
       "length": 17,
       "value": "\"_CN.SENSORSDATA\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 11,
       "value": "\"com.apple\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "StringLiteral",
       "offset": 442,
       "length": 15,
       "value": "\"org.cocoapods\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 626,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1263,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1461,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3050,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3248,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4982,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 6262,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 6337,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 11447,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 13641,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "Array",
       "offset": 15771,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterManager.swift",
       "kind": "BooleanLiteral",
       "offset": 18574,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterPattern.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterPattern.swift",
       "kind": "StringLiteral",
       "offset": 204,
       "length": 6,
       "value": "\"~LA~\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterPattern.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterPattern.swift",
       "kind": "IntegerLiteral",
       "offset": 577,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
       "kind": "StringLiteral",
       "offset": 363,
       "length": 38,
       "value": "\"scheme.TheRouterServiceManager.queue\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
       "kind": "Dictionary",
       "offset": 485,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
       "kind": "Dictionary",
       "offset": 557,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 4543,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Router\/TheRouter\/TheRouterServiceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 5354,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/TimeInterval+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/Foundation\/TimeInterval+IM.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 25,
       "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 163,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 219,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 273,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIButton+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 328,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 215,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 1995,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 2437,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3198,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3211,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3702,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3715,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3922,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIColor+IM.swift",
       "kind": "FloatLiteral",
       "offset": 3962,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
       "kind": "FloatLiteral",
       "offset": 12776,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
       "kind": "FloatLiteral",
       "offset": 12789,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
       "kind": "FloatLiteral",
       "offset": 14326,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIImage+IM.swift",
       "kind": "FloatLiteral",
       "offset": 14339,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 5773,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 6589,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 7436,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIScreen+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 7721,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "StringLiteral",
       "offset": 3403,
       "length": 68,
       "value": "\"LMSwiftExtensions Error: The view \""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "StringLiteral",
       "offset": 3445,
       "length": 5,
       "value": "\" doesn't have a superview\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 3532,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 3543,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "StringLiteral",
       "offset": 3706,
       "length": 68,
       "value": "\"LMSwiftExtensions Error: The view \""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "StringLiteral",
       "offset": 3748,
       "length": 5,
       "value": "\" doesn't have a superview\""
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 3835,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 3846,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "Array",
       "offset": 4131,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 7302,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 12056,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 14643,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 16737,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 21290,
       "length": 3,
       "value": "0.4"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 21346,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 21402,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 21459,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 21658,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 21910,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 22229,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 25110,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 25355,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "FloatLiteral",
       "offset": 25668,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 28786,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 29343,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 29369,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 30918,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 31376,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIView+IM.swift",
       "kind": "IntegerLiteral",
       "offset": 31402,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.ubAl1jvufE\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIWindow+IM.swift",
+      "filePath": "\/var\/folders\/z1\/w379z4_n4zg71ltvnq1lr9kw0000gn\/T\/imbasekit-build-XXXX.7YTK7p6GFy\/IMBaseKit\/Sources\/IMBaseKit\/Base\/Extensions\/UIKit\/UIWindow+IM.swift",
       "kind": "BooleanLiteral",
       "offset": 1814,
       "length": 5,
