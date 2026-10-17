@@ -681,6 +681,14 @@ SWIFT_PROTOCOL("_TtP9IMBaseKit30IMHostAppRouterServiceProtocol_")
 - (void)toChooseProduct:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 搜索设备（params 需包含 <code>deviceType</code>，如 C100 / C110）
 - (void)toSearchDevice:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
+/// 跳转 R2 眼镜设置
+- (BOOL)toR2DeviceSetting:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
+/// 跳转 R2 新手指引
+- (BOOL)toR2NewbieGuide:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
+/// 跳转 R2 修改眼镜名称
+- (void)toR2ModifyGlassName:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
+/// 跳转 R2 关于眼镜
+- (void)toR2AboutGlass:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 C100 新手指引
 - (BOOL)toC100NewbieGuide:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// 跳转 C100 指南详情（params 可含 <code>title</code>）
@@ -1972,6 +1980,14 @@ SWIFT_PROTOCOL("_TtP9IMBaseKit30IMHostAppRouterServiceProtocol_")
 - (void)toChooseProduct:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 搜索设备（params 需包含 <code>deviceType</code>，如 C100 / C110）
 - (void)toSearchDevice:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
+/// 跳转 R2 眼镜设置
+- (BOOL)toR2DeviceSetting:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
+/// 跳转 R2 新手指引
+- (BOOL)toR2NewbieGuide:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
+/// 跳转 R2 修改眼镜名称
+- (void)toR2ModifyGlassName:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
+/// 跳转 R2 关于眼镜
+- (void)toR2AboutGlass:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion;
 /// 跳转 C100 新手指引
 - (BOOL)toC100NewbieGuide:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable, id _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// 跳转 C100 指南详情（params 可含 <code>title</code>）

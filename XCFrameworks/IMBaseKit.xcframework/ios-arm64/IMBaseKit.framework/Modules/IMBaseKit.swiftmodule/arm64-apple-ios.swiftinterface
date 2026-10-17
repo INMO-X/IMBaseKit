@@ -678,6 +678,10 @@ extension IMBaseKit::Environment : Swift::CustomStringConvertible {
   @objc optional func toEditProfile(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
   @objc optional func toChooseProduct(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
   @objc optional func toSearchDevice(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
+  @objc optional func toR2DeviceSetting(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler) -> Swift::Bool
+  @objc optional func toR2NewbieGuide(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler) -> Swift::Bool
+  @objc optional func toR2ModifyGlassName(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
+  @objc optional func toR2AboutGlass(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler)
   @objc optional func toC100NewbieGuide(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler) -> Swift::Bool
   @objc optional func toC100GuideDetail(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler) -> Swift::Bool
   @objc optional func toC100IllustratedGuide(_ params: [Swift::String : Any]?, completion: IMBaseKit::ComplateHandler) -> Swift::Bool

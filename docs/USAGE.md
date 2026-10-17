@@ -362,6 +362,8 @@ TheRouter.registerService(MyHostAppRouterService.self, instance: MyHostAppRouter
 
 `openRouter` 同时分发 `accountKit`。`IMRouterURL.regionSelect` 是 `inmox://accountKit/regionSelect`，`IMRouterURL.unregisterAccount` 是 `inmox://accountKit/unregisterAccount`。这两条交给已注册的 `IMAccountKitRouterServiceProtocol`（`toRegionSelect` / `toUnregisterAccount`）。注销账号不再走 `IMHostAppRouterServiceProtocol`。账号与安全仍是 `inmox://hostApp/accountSecurity`。
 
+R2 也走 `hostApp`：`inmox://hostApp/r2DeviceSetting`、`r2NewbieGuide`、`r2ModifyGlassName`、`r2AboutGlass`，对应 `toR2DeviceSetting`、`toR2NewbieGuide`、`toR2ModifyGlassName`、`toR2AboutGlass`。前两个返回 `Bool`。
+
 `TheRouter.push` / `modal` / `popToRootVC` / `visibleVC` / `getKeyWindow` 不走 URL。`currentViewController()` 和 `UIWindow.im.currentWindow` 只在主线程有值。
 
 ---
@@ -524,7 +526,7 @@ auth.isAvailable(for: .bluetooth) { available, error in
 | `IMRouterScheme` / `IMRouterHost` / `IMRouterPath` | scheme、host、path 常量 |
 | `IMRouterURL` | 拼好的完整 URL。`regionSelect`、`unregisterAccount` 的 host 是 `accountKit` |
 | `IMRouterParamKey` | 参数 key，如 `deviceType` / `url` / `title` |
-| `IMHostAppRouterServiceProtocol` / `hostAppRouter()` | 宿主页面跳转。不含注销账号 |
+| `IMHostAppRouterServiceProtocol` / `hostAppRouter()` | 宿主页面跳转。含 R2 设置、指引、改名、关于眼镜。不含注销账号 |
 | `IMAccountKitRouterServiceProtocol` / `accountKitRouter()` | 地区选择、注销账号 |
 | `IMUIKitRouterServiceProtocol` / `uikitRouter()` | 网页 / 扫码，由 IMUIKit 实现 |
 | `TheRouter.registerService` | 注册服务；异步写入 |
