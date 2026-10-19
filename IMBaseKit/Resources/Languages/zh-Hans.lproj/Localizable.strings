@@ -5,6 +5,7 @@
   Created by Jiangqi on 2026/4/21.
 
 */
+
 // Language
 "language_option_arabic" = "阿拉伯语";
 "language_option_english" = "英语";
@@ -46,15 +47,15 @@
 "popup_go_setting_button_title" = "去设置";
 
 // Permission
-"permission_album_desc" = "该权限会影响本App对设备的扫描、功能连接，请务必开启该权限";
+"permission_album_desc" = "该权限会影响本App对设备的扫描、连接功能，请务必开启该权限";
 "permission_album_title" = "相册权限";
-"permission_bluetooth_desc" = "该权限会影响本App对设备的扫描、功能连接，请务必开启该权限";
+"permission_bluetooth_desc" = "该权限会影响本App对设备的扫描、连接功能，请务必开启该权限";
 "permission_bluetooth_title" = "蓝牙权限";
-"permission_camera_desc" = "该权限会影响本App对设备的扫描、功能连接，请务必开启该权限";
+"permission_camera_desc" = "该权限会影响本App对设备的扫描、连接功能，请务必开启该权限";
 "permission_camera_title" = "相机权限";
-"permission_location_desc" = "该权限会影响本App对设备的扫描、功能连接，请务必开启该权限";
+"permission_location_desc" = "该权限会影响本App对设备的扫描、连接功能，请务必开启该权限";
 "permission_location_title" = "定位权限";
-"permission_microphone_desc" = "该权限会影响本App对设备的扫描、功能连接，请务必开启该权限";
+"permission_microphone_desc" = "该权限会影响本App对设备的扫描、连接功能，请务必开启该权限";
 "permission_microphone_title" = "麦克风权限";
 "permission_status_authorized" = "已授权";
 "permission_status_request" = "请求";
@@ -91,7 +92,7 @@
 
 // Account / Login
 "im_account_agree_and_continue" = "同意并继续";
-"im_account_agreement_sheet_message" = "为了让您在安全、放心的环境下使用INMO Moment，请阅读并同意%1$@和%2$@";
+"im_account_agreement_sheet_message" = "为了让您在安全、放心的环境下使用%1$@，请阅读并同意%2$@和%3$@";
 "im_account_agreement_sheet_title" = "用户协议和隐私政策";
 "im_account_code_sent_format" = "验证码已发送至 %1$@";
 "im_account_email_login_title" = "邮箱登录";
@@ -149,7 +150,7 @@
 "profile_logout" = "退出登录";
 "profile_logout_confirm" = "确认要退出登录吗?";
 "profile_menu_icp" = "备案信息";
-"profile_menu_upload_log" = "用户反馈";
+"profile_menu_feedback" = "用户反馈";
 "profile_menu_version" = "版本";
 "profile_nickname_hint_format" = "昵称最长 %d 个字符，不能填写 %@ 等无效字符";
 "profile_nickname_placeholder" = "请输入昵称";
@@ -175,6 +176,7 @@
 "device_slogan_c100" = "AI拍照眼镜";
 "device_slogan_c110" = "拍照眼镜";
 "device_slogan_xa01" = "音频眼镜";
+"device_slogan_r2" = "运动眼镜";
 "no_device_landing_add_device" = "添加眼镜";
 "no_device_landing_subtitle" = "智能眼镜";
 
@@ -252,8 +254,8 @@
 "c100_ignore_device_desc" = "已解绑「%@」。为彻底断开，请前往系统「设置 - 蓝牙」，点击该设备后选择「忽略此设备」。";
 "c100_ignore_device_title" = "请忽略蓝牙设备";
 "c100_this_device" = "该设备";
-"c100_unbind_confirm_action" = "确定解绑";
-"c100_unbind_confirm_title" = "确认要解绑吗？";
+"device_unbind_confirm_action" = "确定解绑";
+"device_unbind_confirm_title" = "确认要解绑吗？";
 "device_removed_guide_title" = "已移除眼镜";
 "device_unbind_failed" = "解绑失败，请重试";
 "device_unbind_guide_default_name" = "该智能眼镜";
@@ -339,10 +341,10 @@
 "ota_retry" = "重新尝试";
 "ota_success_subtitle" = "您的眼镜固件已是最新版本";
 "ota_success_title" = "升级成功";
-"ota_update_content_title" = "更新内容";
-"ota_update_found_title" = "发现新版本";
-"ota_update_later" = "稍后更新";
-"ota_update_now" = "立即更新";
+"update_content_title" = "更新内容";
+"update_found_title" = "发现新版本";
+"update_later" = "稍后更新";
+"update_now" = "立即更新";
 
 // Glasses / Capture Settings
 "c100_aspect_1080p_16_9" = "1080P 16:9横屏";
@@ -437,7 +439,7 @@
 "c100_factory_resetting" = "恢复出厂设置中...";
 
 // Home
-"c100_home_battery" = "电量";
+"device_home_battery" = "电量";
 "c100_home_card_media" = "图片/视频";
 "c100_home_pet_card_subtitle" = "听懂毛孩子的每一句心里话";
 "c100_home_pet_card_title" = "萌宠互动";
@@ -726,6 +728,8 @@
 "c100_vlog_template_load_failed" = "模版加载失败";
 
 // Guide
+"newbie_guide_title" = "新手指南";
+"newbie_guide_skip" = "跳过";
 "c100_guide_basic_header" = "基础入门";
 "c100_guide_bt_pairing_mode_p1" = "眼镜首次开机时，会自动进入蓝牙配对模式。\n\n或者，连续按“功能键”7次，解除当前蓝牙配对，内指示灯闪烁蓝色，即表示进入蓝牙配对模式。";
 "c100_guide_bt_pairing_mode_title" = "如何进入蓝牙配对模式？";
@@ -768,14 +772,12 @@
 "c100_guide_illu_15_prefix" = "同时长按5秒";
 "c100_guide_illu_next_format" = "下一步 (%d/%d)";
 "c100_guide_illu_previous" = "上一步";
-"c100_guide_illu_skip" = "跳过";
 "c100_guide_image_text_header" = "图文引导";
 "c100_guide_image_text_title" = "图文速览";
 "c100_guide_media_sync_p1" = "请打开INMO Moment APP，在“首页”或“图库页”，点击“同步”，眼镜就会通过Wi-Fi将照片和视频自动传输到手机。";
 "c100_guide_media_sync_title" = "如何将拍摄的照片和视频同步到INMO Moment APP？";
 "c100_guide_second_bt_device_p1" = "在眼镜未佩戴时，连续按“功能键”7次，解除当前蓝牙配对，使内指示灯长亮蓝灯。\n\n等待片刻后，内指示灯闪烁蓝灯，即表示眼镜开始恢复出厂设置。\n\n打开“选择产品”页，选择“inmo Moment Max”，根据页面提示完成搜索和绑定。";
 "c100_guide_second_bt_device_title" = "如何连接第二个蓝牙设备？";
-"c100_guide_title" = "新手指南";
 "c100_guide_unbind_h1" = "连接状态下解绑（强烈建议您这么做）：";
 "c100_guide_unbind_h2" = "未连接状态下解绑：";
 "c100_guide_unbind_h3" = "请注意，为了保证下次能顺利连接，解绑后您还需要在手机的系统蓝牙列表中清除眼镜的配对信息。";
@@ -827,3 +829,105 @@
 "xa01_anc_title" = "降噪模式";
 "xa01_anc_transparency" = "通透";
 "xa01_volume_title" = "音量";
+
+// INMOX
+// Device
+"device_settings_device_name" = "设备名称";
+"device_settings_rename_placeholder" = "请输入设备名称";
+"device_settings_rename_hint_format" = "名称最长 %1$d 个字符，不能填写 %2$@ 等无效字符";
+
+// Device Bluetooth
+"device_r2_system_bluetooth_guide_subtitle" = "请前往系统蓝牙设置内，找到眼镜蓝牙名称为【INMOX R2】，点击连接";
+
+// Device Binding
+// R2 Device
+"r2_walkie_talkie_title" = "实时对讲";
+"r2_walkie_device_disconnected" = "眼镜未连接，请先连接眼镜";
+"r2_map_navigation_title" = "地图导航";
+"r2_map_apple" = "苹果地图";
+"r2_map_google" = "Google 地图";
+"r2_map_mapbox" = "Mapbox";
+"r2_map_amap" = "高德地图";
+"r2_map_baidu" = "百度地图";
+"r2_map_tencent" = "腾讯地图";
+"r2_newbie_step1_title" = "开机";
+"r2_newbie_step1_description" = "同时长按左侧镜腿与右侧镜腿按键 3秒，“开机”";
+"r2_newbie_step2_title" = "关机";
+"r2_newbie_step2_description" = "方式一：长按左侧镜腿按键 6秒，“关机”（联动右侧镜腿关机）\n方式二：连续按压右侧镜腿按键 4次，“关机”（联动左侧镜腿关机）";
+"r2_newbie_step3_title" = "左右镜腿自动配对";
+"r2_newbie_step3_description" = "开机成功后，自动识别左右镜腿完成配对";
+"r2_newbie_step4_title" = "中/英文语音切换";
+"r2_newbie_step4_description" = "开机后，左右镜腿已自动配对完成，且未与手机进行蓝牙连接，同时长按左/右镜腿 6s 开关键，切换“中文模式”或“English Mode”";
+"r2_newbie_step5_title" = "音乐播放/暂停";
+"r2_newbie_step5_description" = "开机后，眼镜已连接手机蓝牙，且在播放音乐状态下。单击左侧镜腿按键，即可“播放音乐”。再次单击左侧镜腿按键，则“暂停音乐播放”";
+"r2_newbie_step6_title" = "接/挂电话";
+"r2_newbie_step6_description" = "开机后，眼镜已连接手机蓝牙，来电状态下。单击左侧镜腿按键，“接听电话”\n通话状态下。单击左侧镜腿按键，“挂断电话”";
+"r2_newbie_step7_title" = "拒接电话";
+"r2_newbie_step7_description" = "开机后，眼镜已连接手机蓝牙，来电状态下。长按左侧镜腿按键 2秒，“拒绝接听来电”";
+"r2_newbie_step8_title" = "对讲功能";
+"r2_newbie_step8_description" = "开机后，眼镜已连接手机蓝牙，且APP处于群组的聊天页面状态下。长按右侧镜腿按键（按住不放），“开始对讲”，松开按键后，“发射语音”";
+"r2_newbie_step9_title" = "手机语音助手唤醒";
+"r2_newbie_step9_description" = "开机后，眼镜已连接手机蓝牙，双击右侧镜腿按键，唤起“手机助手”（如：Siri/小艺）";
+"r2_newbie_step10_title" = "关于充电";
+"r2_newbie_step10_description" = "为了延长眼镜电池使用寿命，眼镜充电时，会自动执行眼镜关机操作。";
+
+// R2 Walkie Talkie
+"r2_walkie_collapse" = "收起";
+"r2_walkie_online_members" = "在线成员";
+"r2_walkie_ptt_hold_to_talk" = "按住 呼叫";
+"r2_walkie_ptt_release_to_send" = "松手 发送";
+"r2_walkie_speaking" = "正在说话";
+"r2_walkie_someone_talking" = "其他人正在讲话";
+"r2_walkie_create_group" = "创建群组";
+"r2_walkie_join_group" = "加入群组";
+"r2_walkie_group_actions_title" = "建群/加群";
+"r2_walkie_create_group_chat" = "创建群聊";
+"r2_walkie_group_name_placeholder" = "请输入群组名称";
+"r2_walkie_create" = "创建";
+"r2_walkie_scan_failed" = "扫码失败";
+"r2_walkie_save_qr_to_album" = "保存二维码到相册";
+"r2_walkie_save_qr_hint" = "点击下方按钮，保存二维码到相册";
+"r2_walkie_invite_friends" = "邀请好友";
+"r2_walkie_invite" = "邀请";
+"r2_walkie_more" = "更多";
+"r2_walkie_channel_members" = "频道成员";
+"r2_walkie_group_name" = "群组名称";
+"r2_walkie_my_group_name" = "我在群组的名称";
+"r2_walkie_group_id" = "群组ID";
+"r2_walkie_group_settings" = "群组设置";
+"r2_walkie_leave_group" = "退出群组";
+"r2_walkie_leave_group_confirm" = "确定退出该群组？";
+"r2_walkie_leave" = "退出";
+"r2_walkie_qr_save_failed_format" = "保存失败: %@";
+"r2_walkie_qr_saved_to_album" = "已保存到相册";
+
+// OTA
+"ota_power_off_tip" = "若眼镜处于开机配对状态下，长按开关机键 6 秒执行关机。";
+"ota_power_off_confirm" = "请确认已经关机后再进入 OTA，否则可能造成设备损坏等严重后果";
+"ota_unpair_guide_title" = "忽略更新前眼镜蓝牙名称";
+"ota_unpair_guide_desc" = "请前往手机系统蓝牙设置中，找到眼镜蓝牙名称【INMOX R2】忽略此设备";
+"ota_temple_left" = "左";
+"ota_temple_right" = "右";
+"ota_temple_step_format" = "眼镜升级步骤 %@";
+"ota_temple_upgrade_format" = "升级%@镜腿固件";
+"ota_temple_step1_format" = "单独长按%@镜腿开关机键 3 秒，执行开机。";
+"ota_temple_step2" = "在手机系统蓝牙列表中，找到眼镜蓝牙名称为【INMOX R2-LE】";
+"ota_temple_step3_format" = "执行%@镜腿升级，升级完成后将自动执行重启。长按开关机键 6 秒执行关机。";
+
+// OTA Error Detail
+"ota_detail_read_file_failed_format" = "读取文件失败：%@";
+"ota_detail_unzip_failed" = "固件 zip 解压失败";
+"ota_detail_traverse_failed" = "无法遍历解压目录";
+"ota_detail_no_firmware_in_zip" = "zip 包内未找到固件文件";
+"ota_detail_missing_temple_data" = "缺失左右镜腿固件数据";
+"ota_detail_firmware_empty" = "固件文件为空";
+"ota_detail_read_firmware_failed_format" = "读取固件文件失败：%@";
+"ota_detail_temple_not_found_format" = "未找到%@镜腿固件数据";
+
+// Device Unbind
+// Device Home
+// MARK: - 解绑引导 / 隐私协议（新增）
+"device_unbind_guide_title" = "解绑成功";
+
+// 解绑时眼镜不在连接状态：App 只能把它从本地移除，没法让眼镜自己也解绑，文案据此区分。
+"device_removed_guide_desc" = "“%@” 已从APP移除。请前往手机系统蓝牙设置中忽略此设备";

@@ -5,6 +5,7 @@
   Created by Jiangqi on 2026/4/21.
 
 */
+
 // Language
 "language_option_arabic" = "Arabic";
 "language_option_english" = "English";
@@ -46,15 +47,15 @@
 "popup_go_setting_button_title" = "Go to Settings";
 
 // Permission
-"permission_album_desc" = "This permission affects device scanning and feature connections. Please enable it.";
+"permission_album_desc" = "This permission will affect the app's device scanning and connection. Please make sure to enable it.";
 "permission_album_title" = "Photo Library Permission";
-"permission_bluetooth_desc" = "This permission will affect the app's device scanning and function connection. Please make sure to enable it.";
+"permission_bluetooth_desc" = "This permission will affect the app's device scanning and connection. Please make sure to enable it.";
 "permission_bluetooth_title" = "Bluetooth Permission";
-"permission_camera_desc" = "This permission affects device scanning and feature connections. Please enable it.";
+"permission_camera_desc" = "This permission will affect the app's device scanning and connection. Please make sure to enable it.";
 "permission_camera_title" = "Camera Permission";
-"permission_location_desc" = "This permission affects device scanning and feature connections. Please enable it.";
+"permission_location_desc" = "This permission will affect the app's device scanning and connection. Please make sure to enable it.";
 "permission_location_title" = "Location Permission";
-"permission_microphone_desc" = "This permission affects device scanning and feature connections. Please enable it.";
+"permission_microphone_desc" = "This permission will affect the app's device scanning and connection. Please make sure to enable it.";
 "permission_microphone_title" = "Microphone Permission";
 "permission_status_authorized" = "Authorized";
 "permission_status_request" = "Request";
@@ -91,7 +92,7 @@
 
 // Account / Login
 "im_account_agree_and_continue" = "Agree and Continue";
-"im_account_agreement_sheet_message" = "To use INMO Moment in a safe and trusted environment, please read and agree to %1$@ and %2$@";
+"im_account_agreement_sheet_message" = "To use %1$@ in a safe and trusted environment, please read and agree to %2$@ and %3$@";
 "im_account_agreement_sheet_title" = "User Agreement and Privacy Policy";
 "im_account_code_sent_format" = "Verification code sent to %1$@";
 "im_account_email_login_title" = "Email Login";
@@ -149,7 +150,7 @@
 "profile_logout" = "Log Out";
 "profile_logout_confirm" = "Are you sure you want to log out?";
 "profile_menu_icp" = "ICP Filing Information";
-"profile_menu_upload_log" = "User Feedback";
+"profile_menu_feedback" = "User Feedback";
 "profile_menu_version" = "Version";
 "profile_nickname_hint_format" = "Nickname can be up to %d characters. Invalid characters such as %@ are not allowed";
 "profile_nickname_placeholder" = "Enter nickname";
@@ -175,6 +176,7 @@
 "device_slogan_c100" = "AI Photography Glasses";
 "device_slogan_c110" = "Camera Glasses";
 "device_slogan_xa01" = "Audio Glasses";
+"device_slogan_r2" = "Sports glasses";
 "no_device_landing_add_device" = "Add Glasses";
 "no_device_landing_subtitle" = "Smart Glasses";
 
@@ -252,8 +254,8 @@
 "c100_ignore_device_desc" = "“%@” has been unbound. To disconnect completely, go to Settings > Bluetooth, tap the device, and choose Forget This Device.";
 "c100_ignore_device_title" = "Forget the Bluetooth Device";
 "c100_this_device" = "This Device";
-"c100_unbind_confirm_action" = "Unbind";
-"c100_unbind_confirm_title" = "Are you sure you want to unbind?";
+"device_unbind_confirm_action" = "Unbind";
+"device_unbind_confirm_title" = "Are you sure you want to unbind?";
 "device_removed_guide_title" = "Glasses Removed";
 "device_unbind_failed" = "Unbind failed. Please try again.";
 "device_unbind_guide_default_name" = "this device";
@@ -339,10 +341,10 @@
 "ota_retry" = "Retry";
 "ota_success_subtitle" = "Your glasses firmware is now up to date.";
 "ota_success_title" = "Upgrade Successful";
-"ota_update_content_title" = "What's New";
-"ota_update_found_title" = "New Version Available";
-"ota_update_later" = "Later";
-"ota_update_now" = "Update Now";
+"update_content_title" = "What's New";
+"update_found_title" = "New Version Available";
+"update_later" = "Later";
+"update_now" = "Update Now";
 
 // Glasses / Capture Settings
 "c100_aspect_1080p_16_9" = "1080P 16:9 Landscape";
@@ -437,7 +439,7 @@
 "c100_factory_resetting" = "Restoring factory settings...";
 
 // Home
-"c100_home_battery" = "Battery";
+"device_home_battery" = "Battery";
 "c100_home_card_media" = "Photos/Videos";
 "c100_home_pet_card_subtitle" = "Understand every little thing your pet is saying";
 "c100_home_pet_card_title" = "Pet Play";
@@ -768,14 +770,14 @@
 "c100_guide_illu_15_prefix" = "Long press both for 5s";
 "c100_guide_illu_next_format" = "Next (%d/%d)";
 "c100_guide_illu_previous" = "Previous";
-"c100_guide_illu_skip" = "Skip";
+"newbie_guide_skip" = "Skip";
 "c100_guide_image_text_header" = "Illustrated Guide";
 "c100_guide_image_text_title" = "Quick Overview";
 "c100_guide_media_sync_p1" = "Please open INMO Moment APP, tap \"Sync\" on the \"Home\" or \"Gallery\" page, and the glasses will automatically transfer photos and videos to your phone via Wi-Fi.";
 "c100_guide_media_sync_title" = "How to sync captured photos and videos to INMO Moment APP?";
 "c100_guide_second_bt_device_p1" = "While not wearing the glasses, press the \"Function Button\" 7 times consecutively to unpair current Bluetooth until the inner indicator light turns solid blue.\n\nAfter a moment, the inner indicator light flashes blue, indicating the glasses are entering pairing mode.\n\nOpen \"Choose Product\" page, select \"inmo Moment Max\", and follow on-screen instructions to complete search and binding.";
 "c100_guide_second_bt_device_title" = "How to connect a second Bluetooth device?";
-"c100_guide_title" = "Beginner's Guide";
+"newbie_guide_title" = "Beginner's Guide";
 "c100_guide_unbind_h1" = "Unbind when connected (Strongly recommended):";
 "c100_guide_unbind_h2" = "Unbind when disconnected:";
 "c100_guide_unbind_h3" = "Please note, to ensure smooth connection next time, you also need to remove the glasses' pairing information from your phone's system Bluetooth list after unbinding.";
@@ -827,3 +829,109 @@
 "xa01_anc_title" = "Noise Control";
 "xa01_anc_transparency" = "Transparency";
 "xa01_volume_title" = "Volume";
+
+// INMOX
+// Profile
+"newbie_guide_title" = "Quick Start";
+
+// Device
+"device_settings_device_name" = "Device Name";
+"device_settings_rename_placeholder" = "Enter device name";
+"device_settings_rename_hint_format" = "Name can be up to %1$d characters. Invalid characters: %2$@ are not allowed";
+
+// Device Bluetooth
+"device_r2_system_bluetooth_guide_subtitle" = "Go to system Bluetooth settings, find the glasses named [INMOX R2], then tap to connect.";
+
+// Device Binding
+// R2 Device
+"r2_walkie_talkie_title" = "Walkie-Talkie";
+"r2_walkie_device_disconnected" = "Glasses are not connected. Please connect the glasses first.";
+"r2_map_navigation_title" = "Map Navigation";
+"r2_map_apple" = "Apple Maps";
+"r2_map_google" = "Google Maps";
+"r2_map_mapbox" = "Mapbox";
+"r2_map_amap" = "Amap";
+"r2_map_baidu" = "Baidu Maps";
+"r2_map_tencent" = "Tencent Maps";
+"newbie_guide_title" = "Quick Start";
+"r2_newbie_step1_title" = "Power On";
+"r2_newbie_step1_description" = "Press and hold the left and right temple buttons together for 3 seconds to power on.";
+"r2_newbie_step2_title" = "Power Off";
+"r2_newbie_step2_description" = "Method 1: Press and hold the left temple button for 6 seconds to power off both sides.\nMethod 2: Quickly press the right temple button 4 times to power off both sides.";
+"r2_newbie_step3_title" = "Auto Pairing";
+"r2_newbie_step3_description" = "After power on, the left and right temples are automatically recognized and paired.";
+"r2_newbie_step4_title" = "Chinese/English Voice Switch";
+"r2_newbie_step4_description" = "After power on and temple pairing, when not connected to phone Bluetooth, press and hold the left/right temple power key for 6 seconds to switch between Chinese mode and English mode.";
+"r2_newbie_step5_title" = "Music Play/Pause";
+"r2_newbie_step5_description" = "After connecting to phone Bluetooth during music playback, click the left temple button to play music. Click again to pause.";
+"r2_newbie_step6_title" = "Answer/Hang Up Calls";
+"r2_newbie_step6_description" = "When there is an incoming call, click the left temple button to answer. During a call, click the left temple button again to hang up.";
+"r2_newbie_step7_title" = "Reject Call";
+"r2_newbie_step7_description" = "When there is an incoming call, press and hold the left temple button for 2 seconds to reject.";
+"r2_newbie_step8_title" = "Walkie-Talkie";
+"r2_newbie_step8_description" = "After connecting to phone Bluetooth, and while the app is on the group chat screen, press and hold the right temple button to start talk. Release to send voice.";
+"r2_newbie_step9_title" = "Phone Voice Assistant";
+"r2_newbie_step9_description" = "After connecting to phone Bluetooth, double-click the right temple button to trigger your phone assistant (e.g., Siri).";
+"r2_newbie_step10_title" = "About charging";
+"r2_newbie_step10_description" = "To extend the battery life of the glasses, the device will automatically shut down when charging.";
+
+// R2 Walkie Talkie
+"r2_walkie_collapse" = "Collapse";
+"r2_walkie_online_members" = "Online Members";
+"r2_walkie_ptt_hold_to_talk" = "Hold to Talk";
+"r2_walkie_ptt_release_to_send" = "Release to Send";
+"r2_walkie_speaking" = "Speaking";
+"r2_walkie_someone_talking" = "Someone else is talking";
+"r2_walkie_create_group" = "Create Group";
+"r2_walkie_join_group" = "Join Group";
+"r2_walkie_group_actions_title" = "Create/Join Group";
+"r2_walkie_create_group_chat" = "Create Group Chat";
+"r2_walkie_group_name_placeholder" = "Enter group name";
+"r2_walkie_create" = "Create";
+"r2_walkie_scan_failed" = "Scan failed";
+"r2_walkie_save_qr_to_album" = "Save QR Code to Photos";
+"r2_walkie_save_qr_hint" = "Tap the button below to save the QR code to Photos";
+"r2_walkie_invite_friends" = "Invite Friends";
+"r2_walkie_invite" = "Invite";
+"r2_walkie_more" = "More";
+"r2_walkie_channel_members" = "Channel Members";
+"r2_walkie_group_name" = "Group Name";
+"r2_walkie_my_group_name" = "My Name in Group";
+"r2_walkie_group_id" = "Group ID";
+"r2_walkie_group_settings" = "Group Settings";
+"r2_walkie_leave_group" = "Leave Group";
+"r2_walkie_leave_group_confirm" = "Leave this group?";
+"r2_walkie_leave" = "Leave";
+"r2_walkie_qr_save_failed_format" = "Save failed: %@";
+"r2_walkie_qr_saved_to_album" = "Saved to Photos";
+
+// OTA
+"ota_power_off_tip" = "If the glasses are on and in pairing mode, press and hold the power button for 6 seconds to turn them off.";
+"ota_power_off_confirm" = "Please confirm the device is powered off before entering OTA. Otherwise it may cause serious damage.";
+"ota_unpair_guide_title" = "Glasses Bluetooth name before the update";
+"ota_unpair_guide_desc" = "Go to your phone's Bluetooth settings, find the glasses named [INMOX R2], then forget this device.";
+"ota_temple_left" = "Left";
+"ota_temple_right" = "Right";
+"ota_temple_step_format" = "Glasses Upgrade Step %@";
+"ota_temple_upgrade_format" = "Upgrade %@ Temple Firmware";
+"ota_temple_step1_format" = "Press and hold the %@ temple power button for 3 seconds to power on.";
+"ota_temple_step2" = "In your phone's Bluetooth list, find the glasses named [INMOX R2-LE]";
+"ota_temple_step3_format" = "Start the %@ temple upgrade. It restarts automatically once done. Press and hold the power button for 6 seconds to power off.";
+
+// OTA Error Detail
+"ota_detail_read_file_failed_format" = "Failed to read file: %@";
+"ota_detail_unzip_failed" = "Failed to unzip firmware";
+"ota_detail_traverse_failed" = "Unable to traverse unzipped directory";
+"ota_detail_no_firmware_in_zip" = "Firmware file not found in the zip";
+"ota_detail_missing_temple_data" = "Missing left/right temple firmware data";
+"ota_detail_firmware_empty" = "Firmware file is empty";
+"ota_detail_read_firmware_failed_format" = "Failed to read firmware file: %@";
+"ota_detail_temple_not_found_format" = "%@ temple firmware data not found";
+
+// Device Unbind
+// Device Home
+// MARK: - Unbind Guide / Privacy Consent (added)
+"device_unbind_guide_title" = "Unbound Successfully";
+
+// Unbinding while the glasses are offline: the app can only remove it locally.
+"device_removed_guide_desc" = "“%@” has been removed from the app. Please go to your phone’s Bluetooth settings and forget this device.";
